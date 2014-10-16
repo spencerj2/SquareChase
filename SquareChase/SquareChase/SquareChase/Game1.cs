@@ -18,6 +18,13 @@ namespace SquareChase
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        Random rand = new Random();
+        Texture2D squareTexture;
+        Rectangle currentSquare;
+        int playerScore = 0;
+        float timeRemaining = 0.0f;
+        const float TimePerSquare = 0.75f;
+        Color[] colors = new Color[3] { Color.Red, Color.Green, Color.Blue };
 
         public Game1()
         {
